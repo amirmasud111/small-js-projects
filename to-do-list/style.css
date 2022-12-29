@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    user-select: none;
+}
+
+main {
+    margin: 100px auto;
+    max-width: 550px;
+    font-size: 18px;
+}
+
+main h1 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+main .input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px
+}
+
+.input-container input {
+    flex: 1;
+    border: 1px solid #80cfa9;
+    outline: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+    font-size: 0.8em;
+    transition: .2s;
+}
+
+.input-container input:focus {
+    box-shadow: 0 0 4px 3px #11b6e4a1;
+}
+
+
+.input-container .add-btn {
+    padding: 5px 15px;
+    border: 1px solid #80cfa9;
+    color: #80cfa9;
+    transition: 0.2s;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input-container .add-btn:hover {
+    background-color: #80cfa9;
+    color: black;
+}
+
+main ul {
+    list-style: none;
+}
+
+main ul li {
+    display: flex;
+    font-size: 1.3em;
+}
+
+ul li .title {
+    flex: 1;
+}
+
+ul li i {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+ul li i:hover {
+    text-shadow: 0px 0px 5px #80cfa9;
+}
+
+ul li i:nth-child(3) {
+    margin: 0 15px;
+}
+
+.clear-btn {
+    width: 120px;
+    text-align: center;
+    padding: 5px 15px;
+    border: 1px solid #80cfa9;
+    color: #80cfa9;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.clear-btn:hover {
+    background-color: #80cfa9;
+    color: black;
+}
+
+.clear-btn:active,
+.add-btn:active {
+    transform: scale(105%);
+    box-shadow: 0 0 10px 2px #2b58438e;
+}
+
+.done-item {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, .4);
+}
+
+.done-icon {
+    color: rgba(0, 0, 0, .4);
+}
+
+.alert {
+    background-color: rgb(245, 156, 200);
+    border: 1px solid rgb(236, 83, 160);
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 10px;
+    display: none;
+}
