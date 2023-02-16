@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Yesteryear);
+
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yesteryear', cursive;
+}
+
+body {
+    background-color: #d2dbdc;
+}
+
+.game-container {
+    margin: 150px auto;
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    display: grid;
+    gap: 1px;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow: hidden;
+    box-shadow: 0 0 18px 5px rgba(0, 0, 0, 0.329);
+}
+
+.game-container .slot {
+    background-color: #508ABB;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: white;
+}
+
